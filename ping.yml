@@ -1,0 +1,16 @@
+name: Keep Alive
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  Ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: Ping
+        run: |
+          ping https://proxy.jupitersleo.repl.co/
