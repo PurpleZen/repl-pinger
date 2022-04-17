@@ -13,4 +13,4 @@ jobs:
 
       - name: Ping
         run: |
-          ping https://proxy.jupitersleo.repl.co/
+          ping proxy.jupitersleo.repl.co/
