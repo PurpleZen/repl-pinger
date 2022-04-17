@@ -13,4 +13,4 @@ jobs:
 
       - name: Curl URL
         run: |
-          curl https://proxy.jupitersleo.repl.co/
+          curl --silent https://proxy.jupitersleo.repl.co/
