@@ -11,6 +11,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: Ping
+      - name: Curl URL
         run: |
-          ping proxy.jupitersleo.repl.co/
+          curl https://proxy.jupitersleo.repl.co/
