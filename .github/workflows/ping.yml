@@ -14,4 +14,4 @@ jobs:
       - name: Curl URL
         run: |
           # Your Repl site link goes here ↓
-          curl -s -S --retry 2 https://pinger.jupitersleo.repl.co/
+          curl -s -S --retry 2 https://<link>
