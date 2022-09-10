@@ -15,3 +15,4 @@ jobs:
         run: |
           # Your Repl site link goes here ↓
           curl -s -S --retry 2 https://<link>
+          time > workflow-alive.txt
