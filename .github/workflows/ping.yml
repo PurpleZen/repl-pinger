@@ -11,8 +11,16 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
+      - name: Keep Workflow Enabled
+        run: |
+          date > workflow-alive.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "It's Alive! 🧟"
+          git push
+
       - name: Curl URL
         run: |
           # Your Repl site link goes here ↓
           curl -s -S --retry 2 https://<link>
-          date > workflow-alive.txt
